@@ -2,36 +2,74 @@ body {
     background-color: rgb(7, 7, 7);
     color: rgb(219, 14, 14);
     font-family: "Felipa", serif;
+    font-weight: 100;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 900px;
     margin: 0;
+    background-image: url("Imagens/back.jpg");
+    background-position: center center;
+    background-size: cover;
 }
-main{
-    margin: 100px; 
-    text-align: justify;
+
+main {
+    margin: 80px;
     text-align: center;
-    max-width: 60%;
+    max-width: 70%;
     font-size: 30px;
-    
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 50px;
 }
+
 button {
     background-color: rgb(194, 15, 15);
     color: black;
     font-family: "Felipa", serif;
     font-size: 29px;
+    /* display: none; */
+}
+
+.center {
+    margin: 0 auto;
+}
+
+button:hover {
+    color: white;
+    border: solid 2px black;
 }
 
 .passo {
     display: none;
+
 }
 
-.passo.ativo {
+.ativo {
     display: block;
+    animation-duration: 3s;
+    animation-name: slidein;
 }
 
 img {
     max-width: 70%;
+    max-height: 300px;
 }
-    
+
+@keyframes slidein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+p {
+    margin: 0px;
+}
+
+/* .hide,
+.fim {
+    display: none;
+} */
